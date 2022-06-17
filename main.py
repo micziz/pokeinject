@@ -44,8 +44,7 @@ def main():
         pokete_name = input()
         console.print("[bold green] > What is the new name of the pokete?")
         new_name = input()
-        rebuilding = f"""
-    p_data.pokes["{pokete_name}"]["name"] = "{new_name}"
+        rebuilding = f"""   p_data.pokes["{pokete_name}"]["name"] = "{new_name}"
         """
         with open("pokete/mods/mods.py", "a") as f:
             f.write(rebuilding)
